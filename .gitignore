@@ -1,0 +1,7 @@
+# Dependências e pastas locais de editores
+.vscode/
+node_modules/
+
+# Sistema Operativo
+.DS_Store
+Thumbs.db

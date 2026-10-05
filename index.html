@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Projeto Nota Fiscal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgba(5, 33, 66, 1);
+            font-family: Arial, sans-serif;
+            height: 100vh;
+        }
+
+        .login {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 0 50px;
+        }
+
+        .imglado {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imglado img {
+            max-width: 70%;
+            height: auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            gap: 10px;
+            color: rgba(255, 255, 255, 1);
+            font-size: 18px;
+        }
+
+        input {
+            width: 500px;
+            height: 36px;
+            padding: 0 12px;
+            background: rgba(217, 217, 217, 1);
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            color: #000;
+        }
+
+        button {
+            width: 400px;
+            height: 40px;
+            background: rgba(244, 197, 47, 1);
+            border-radius: 10px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: rgba(220, 175, 35, 1);
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        form p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        form p a {
+            color: #3399ff;
+            text-decoration: none;
+        }
+
+        form p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <main class="login">
+        <!-- Lado esquerdo: Imagem -->
+        <div class="imglado">
+            <img src="image/d0347019-3482-4ed9-827f-408210c0af37.png" alt="Ícone de Segurança e Login">
+        </div>
+
+        <!-- Lado direito: Formulário -->
+        <form action="" method="post">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" required>
+
+            <div class="button">
+                <button type="submit">Entrar</button>
+            </div>
+
+            <p>Não tem uma conta? <a href="cad_usuario.html">Cadastra-se</a></p>
+        </form>
+    </main>
+</body>
+</html>
