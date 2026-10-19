@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta - Projeto Nota Fiscal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="form-container">
+        <div class="topo-cabecalho-central">
+            <img src="image/logo_cadeados.png" alt="Logotipo" class="logo-simbolo-central">
+            <h2>Criar conta</h2>
+        </div>
+
+        <form action="index.html" method="post">
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" id="nome" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" required>
+
+            <label for="confirmar_senha">Confirmar Senha</label>
+            <input type="password" name="confirmar_senha" id="confirmar_senha" required>
+
+            <button type="submit">Criar</button>
+
+            <p>Já tem uma conta? <a href="index.html">Entrar</a></p>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Item da Nota</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="form-container">
+        
+        <!-- Imagem grande posicionada no lado esquerdo -->
+        <img src="image/logotipo da nota fiscal.png" alt="Logotipo da Nota Fiscal" class="logo-fixo-esquerda">
+
+        <div class="topo-cabecalho-central">
+            <h2>Cadastro Produto e Nota</h2>
+        </div>
+
+        <form action="#" method="post">
+            <label for="fk_cd_produto">Código do Produto</label>
+            <input type="number" name="fk_cd_produto" id="fk_cd_produto" required>
+
+            <label for="fk_cd_nota">Código da Nota</label>
+            <input type="number" name="fk_cd_nota" id="fk_cd_nota" required>
+
+            <label for="qt_produto">Quantidade do Produto</label>
+            <input type="number" name="qt_produto" id="qt_produto" required>
+
+            <label for="vl_total_item">Valor Total de cada Item</label>
+            <input type="number" step="0.01" name="vl_total_item" id="vl_total_item" required>
+
+            <div class="botoes-acao">
+                <button type="submit" class="btn-cadastrar">Cadastrar</button>
+                <a href="home.html" class="btn-menu-voltar">Menu</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

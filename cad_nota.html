@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Nota</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="form-container">
+        <div class="topo-cabecalho-central">
+            <img src="image/logo_cadeados.png" alt="Logotipo" class="logo-simbolo-central">
+            <h2>Cadastro de Nota</h2>
+        </div>
+
+        <form action="#" method="post">
+            <label for="dt_emissao">Data de Emissão</label>
+            <input type="date" name="dt_emissao" id="dt_emissao" required>
+
+            <label for="dt_envio">Data de Envio</label>
+            <input type="date" name="dt_envio" id="dt_envio" required>
+
+            <label for="vl_total">Valor Total</label>
+            <input type="number" step="0.01" name="vl_total" id="vl_total" required>
+
+            <label for="fk_nr_cnpj">Número do CNPJ (Cliente)</label>
+            <input type="text" name="fk_nr_cnpj" id="fk_nr_cnpj" required>
+
+            <div class="botoes-acao">
+                <button type="submit" class="btn-cadastrar">Cadastrar</button>
+                <a href="home.html" class="btn-menu-voltar">Menu</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

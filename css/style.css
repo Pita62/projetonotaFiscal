@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0b192c;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* O position: relative é obrigatório para prender a imagem à esquerda da caixa */
+main.login, .form-container, .menu-container {
+    background-color: #0b192c;
+    padding: 30px;
+    width: 460px;
+    border-radius: 8px;
+    position: relative; 
+}
+
+/* Logotipo grande posicionado exatamente no lado esquerdo */
+.logo-fixo-esquerda {
+    position: absolute;
+    left: -230px;           /* Afasta a imagem para o lado esquerdo de fora da caixa */
+    top: 50%;               /* Centraliza verticalmente em relação ao formulário */
+    transform: translateY(-50%);
+    width: 190px;           /* Tamanho grande conforme pretendido */
+    height: auto;
+    object-fit: contain;
+    background-color: #ffffff; /* Fundo branco para destacar os cadeados */
+    border-radius: 12px;
+    padding: 10px;
+    border: 3px solid #f1c40f; /* Borda elegante */
+}
+
+/* Cabeçalho centralizado do título */
+.topo-cabecalho-central {
+    text-align: center;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.topo-cabecalho-central h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #cccccc;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    color: #000000;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    background-color: #ffffff;
+}
+
+button[type="submit"], .btn-principal {
+    width: 100%;
+    padding: 10px;
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #d4ac0d;
+}
+
+p {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 15px;
+    color: #aaaaaa;
+}
+
+p a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.grid-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn-menu {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.btn-menu:hover {
+    background-color: #e0e0e0;
+}
+
+.botoes-acao {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-cadastrar {
+    flex: 2;
+    padding: 10px;
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+}
+
+.btn-menu-voltar {
+    flex: 1;
+    padding: 10px;
+    background-color: #27ae60;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
